@@ -1,0 +1,260 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Original author:
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{scrartcl}
+
+\reversemarginpar % Move the margin to the left of the page 
+
+\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}} % New command defining the margin text style
+\usepackage[T1]{fontenc}
+\usepackage[nochapters]{classicthesis} % Use the classicthesis style for the style of the document
+\usepackage[LabelsAligned]{currvita} % Use the currvita style for the layout of the document
+\usepackage[left=4.5cm, right=1.5cm, top=2cm]{geometry}
+
+\renewcommand{\cvheadingfont}{\LARGE\color{Maroon}} % Font color of your name at the top
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon} % Set link colors
+\date{} 
+\newlength{\datebox}\settowidth{\datebox}{Spring 2011} % Set the width of the date box in each block
+
+\newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0 \parbox{\datebox}{\small \textit{#1}}\hspace{1.5em} #2 #3 % Define a command for each new block - change spacing and font sizes here: #1 is the left margin, #2 is the italic date field and #3 is the position/employer/location field
+\vspace{0.5em}} % Add some white space after each new entry
+
+\newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}} % Define a command for descriptions of each entry - change spacing and font sizes here
+
+%\usepackage{utopia}
+%\usepackage{ebgaramond} 
+\usepackage[adobesc]{newtxtext}
+\usepackage{helvet}
+\newcommand\updateinfo{\hfill\scriptsize\color{gray} Last updated on \today}
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\thispagestyle{empty} % Stop the page count at the bottom of the first page
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{cv}{\spacedallcaps{Siddharth S. Tomar}}\vspace{1.5em} % Your name
+
+\noindent\spacedlowsmallcaps{Personal Information}\vspace{0.5em} % Personal information heading
+
+\NewEntry{}{\textit{Born in India,}}{08 May 1994} % Birthplace and date
+
+\NewEntry{email}{\href{mailto:siddharth.tomar@scilifelab.se}{siddharth.tomar@scilifelab.se}} % Email address
+
+%\NewEntry{website}{\href{http://www.siddharthtomar.me}{http://www.siddharthtomar.me}} % Personal website
+
+\NewEntry{phone}{(Swe) +46-702759580\ \ $\cdotp$\ \ (Ind) +91-8894636427} % Phone number(s)
+
+\vspace{1em} % Extra white space between the personal information section and goal
+
+%\noindent\spacedlowsmallcaps{Goal}\vspace{1em} % Goal heading, could be used for a quotation or short profile instead
+
+%\Description{Gain fundamental experience in my area of interest and expertise.}\vspace{2em} % Goal text
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Education}\vspace{1em}
+
+\NewEntry{2016-2018}{KTH Royal Institute of Technology}
+
+\Description{\MarginText{Master of Science}Master’s programme in Molecular Techniques in Life Science, a joint program with Karolinska Institutet and Stockholm University\newline 
+Duration: 2 years (full time)\newline
+Date of graduation: 31-May-2018\newline
+Country: \textit{Sweden}
+}
+
+%------------------------------------------------
+
+\NewEntry{2012-2016}{Jaypee University of Information Technology}
+
+\Description{\MarginText{Bachelor of Technology}GPA: 8.6 out of 10\ \ $\cdotp$\ \ \textit{Specialization in Bioinformatics}\newline
+Duration: 4 years (full time)\newline
+Date of graduation: 09-July-2016\newline
+Country: \textit{India}\newline
+%Additional electives:  \textit{Cryptography}\ \ $\cdotp$\ \  \textit{High Performance Computing}\ \ $\cdotp$\ \ \textit{Systems Biology}
+}
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Bioinformatics skills}\vspace{1em}
+
+\Description{\MarginText{Workflows}Genome/Transcriptome assembly, Quantification, Differential expression, Novel gene discovery, Time series analysis, Weighted correlation network analysis}
+\vspace{-2.5mm}
+\Description{\MarginText{Programming}\textsc{C++/C (including CUDA and MPI), Java, Python, Perl, R}}
+\vspace{-2.5mm}
+\Description{\MarginText{Databases}\textsc{MySQL}}
+\vspace{-2.5mm}
+\Description{\MarginText{Machine learning}\textsc{Scikit-learn, Tensorflow}}
+\vspace{-2.5mm}
+\Description{\MarginText{Documentation}\textsc{\LaTeX, Markdown}}
+\vspace{-2.5mm}
+\Description{\MarginText{Version control}\textsc{GIT}}
+\vspace{-2.5mm}
+\Description{\MarginText{Model organisms}\textsc{Human, Mice, \textit{P. abies}}}
+
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	LAB SKILLS
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Lab skills}\vspace{1em}
+
+\Description{\MarginText{Genetic Engineering}Gene cloning using bacteria, Gene disruption and gene replacement in bacteria}
+
+\Description{\MarginText{General}DNA isolation, RNA isolation, Plasmid and genomic DNA isolation, PCR, Sanger and Illumina sequencing}
+
+%----------------------------------------------------------------------------------------
+%	Keywords, coursework 
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Coursework - keywords}\vspace{1em}
+
+\Description{\MarginText{Molecular biology}Systems biology, Genetics, translational research in cardiology, neurodegenerative disorders, homology search, multiple sequence alignment, phylogeny reconstruction, protein topology prediction, biophysical chemistry, molecular dynamics, comparative genomics, proteomics, mass spectrometry, antibody assays, short and long read sequencing, mircoarrays, bead based assays, droplet barcoding, single cell sequencing, ChIP sequencing}
+
+
+%------------------------------------------------
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+\newpage
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\noindent\spacedlowsmallcaps{Research experience}\vspace{1em}
+
+\NewEntry{\mbox{Jun'18--present}}{\textsc{Karolinska Institutet} - Sweden}
+
+\Description{\MarginText{SciLifeLab - Stockholm}I'm currently working as a research assistant in Dr Claudia Kutter's group in Science For Life laboratory, Stockholm. My current work builds upon my experience in my master's thesis and is more focused on the developmental dynamics of PIWI-interacting RNA (piRNA) in mice and their interplay with transposons. This project also involves an in-depth characterization of piRNA genes with respect to their function in regulating genomic integrity and as an individual class of genes. 
+	\\ Reference: Claudia \textsc{Kutter}\ \ $\cdotp$\ \ +46-704933896\ \ $\cdotp$\ \ \href{mailto:claudia.kutter@ki.se}{claudia.kutter@ki.se}}
+
+\NewEntry{Jun--Aug '17}{\textsc{Karolinska Institutet} - Sweden}
+
+\Description{\MarginText{SciLifeLab - Stockholm}After being awarded SciLifeLab Summer Fellowship, I joined Dr. Claudia Kutters group at the Karolinska Institute/SciLifeLab. My work was focused on annotating various RNA classes from mice liver at various developmental stages by using of total RNA sequencing data. This project involved methods for discovering novel developmental stage-specific noncoding RNAs and correlation with other meta resources to mark functionality. 
+	\\ Reference: Claudia \textsc{Kutter}}
+
+%------------------------------------------------
+
+\NewEntry{Jun--Aug '15}{\textsc{Institute of Oncology Research}  - Switzerland}
+
+\Description{\MarginText{IOSI-IOR}Worked under Dr. Francesco Bertoni’s  group at Institute of Oncology Research, Bellinzona, Switzerland on performance profiling of short read aligners (using Nvidia CUDA framework) for testing scalability in GPGPU environment. I studied impact of GPU based tools on NGS analysis pipeline and included cost versus performance analysis.  \\ Reference: Ivo \textsc{Kwee}\ \ +41-794283375\ \ $\cdotp$\ \ \href{mailto: ivo.kwee@ior.iosi.ch}{ ivo.kwee@ior.iosi.ch}}
+
+\Description{\MarginText{Master's thesis}\textit{Micro-evolution of regulatory RNAs}\newline
+	In this master thesis project, I am currently investigating the functional contribution of regulatory RNA in speciation in closely related mice species. This involves studying dynamics of their species-specific gene expression by utilizing ChIP sequencing to define active promoters along with short and total RNA sequencing. \newline
+	Supervisor: Claudia \textsc{Kutter}}
+
+\Description{\MarginText{Bachelor's thesis}\textit{Improving the computation of positive selection using codon models}\newline
+	In my bachelor project, I successfully modified software algorithms to reduce the redundancy and increase the sensitivity by employing Branch-Site Model on GPU architecture. By running simulations, I tested the gains in efficiency and performance to validate that my algorithm modifications were appropriate.}
+
+
+\vspace{1em} % Extra space between major sections
+
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+
+\noindent\spacedlowsmallcaps{Projects}\vspace{1em}
+
+\NewEntry{2017}{\textsc{KTH Royal Institute of Technology}}
+
+\Description{\MarginText{Course Project}Assembling reference transcriptome for \textit{P. abies} using massively parallel and PacBio real time sequencing data. This project involved utilization of large amount of data ($>$700 million reads) and optimization techniques for transcriptome assembly. \newline
+Reference: Lars \textsc{Arvestad}\ \ $\cdotp$\ \ +4687906436\ \ $\cdotp$\ \ \href{mailto:lars.arvestad@scilifelab.se}{lars.arvestad@scilifelab.se} 
+}
+
+\NewEntry{2017}{\textsc{Stockholm University}}
+
+\Description{\MarginText{Course Project}Constructing a SVM based predictor for classifying topological features of $\beta$ barrels based on their sequence.}
+
+
+\NewEntry{2014}{Jaypee University of Information Technology}
+
+\Description{\MarginText{Course Project}Identification of novel leads against dimeric interface(DBP) in \textit{P. vivax} using computer-aided drug design. For this project, I investigated the structural dynamics of Duffy binding proteins with respect to the phylum Apicomplexa.} 
+
+\newpage
+
+\NewEntry{2013}{Jaypee University of Information Technology}
+
+\Description{\MarginText{Course Project}Created an application written in Java for searching repeat content in a given genome. Simple machine learning technique was used, applying the Hidden Markov Model. Lempel–Ziv–Welch algorithm was also used and modified according to requirements. Perl was used as a wrapper and as text acquisition/annotation search engine.} 
+
+%------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	Posters and conferences
+%----------------------------------------------------------------------------------------
+\spacedlowsmallcaps{Poster presentation and conferences}\vspace{1em}
+
+\NewEntry{2018}{2\textsuperscript{nd} Uppsala Transposon Symposium}
+
+\Description{\MarginText{Poster}Micro-evolution of regulatory RNA in M. domesticus and M. castaneus} 
+
+%------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	OTHER INFORMATION
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Other Information}\vspace{1em}
+
+\Description{\MarginText{Scholarships}2017\ \ $\cdotp$\ \ Science for Life Laboratory summer fellowship}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{2017\ \ $\cdotp$\ \ Karolinska Institutet Foundation scholarship}
+
+\vspace{1em}
+
+\newlength{\langbox} % Create a new length for the length of languages to keep them equally spaced
+\settowidth{\langbox}{English} % Length equals the length of "English" - if you have a longer language in your list put it here
+
+\Description{\MarginText{Languages}\parbox{\langbox}{\textsc{English}}\ \ $\cdotp$\ \ \ Fluent}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{\parbox{\langbox}{\textsc{Hindi}}\ \ $\cdotp$\ \ \ Native}
+
+
+\vspace{1em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\updateinfo
+
+
+
+%----------------------------------------------------------------------------------------
+
+\end{cv}
+
+\end{document}
