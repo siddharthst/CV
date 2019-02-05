@@ -1,16 +1,9 @@
 sudo: required
 language: latex
 
-before_install:
-- sudo apt-get update -qq
-- sudo apt-get install texlive-latex-recommended
+services:
+  - docker
+
 script:
-- mkdir build
-- pdflatex -output-directory build src/SiddharthCV.tex
-deploy:
-  provider: releases
-  file:
-    - build/SiddharthCV.pdf
-  skip_cleanup: true
-  on:
-    tags: true
+  - docker pull rekka/tectonic
+  - docker run --mount src=$TRAVIS_BUILD_DIR/src,target=/usr/src/tex,type=bind rekka/tectonic tectonic SiddharthCV.tex
