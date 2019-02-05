@@ -1,5 +1,5 @@
 sudo: require
-dist: beaver
+dist: bionic
 language: generic
 
 before_install:
