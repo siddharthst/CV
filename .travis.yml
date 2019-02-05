@@ -10,7 +10,7 @@ script:
 deploy:
   provider: releases
   file:
-    - build/root.pdf
+    - build/SiddharthCV.pdf
   skip_cleanup: true
   on:
     tags: true
