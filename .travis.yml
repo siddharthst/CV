@@ -1,5 +1,6 @@
 sudo: required
 language: generic
+dist: bionic
 services: docker
 
 before_install:
