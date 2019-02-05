@@ -5,5 +5,5 @@ services:
   - docker
 
 script:
-  - docker pull rekka/tectonic
-  - docker run --mount src=$TRAVIS_BUILD_DIR/src,target=/usr/src/tex,type=bind rekka/tectonic tectonic SiddharthCV.tex
+  - docker pull dxjoke/tectonic-docker
+  - docker run --mount src=$TRAVIS_BUILD_DIR/src,target=/usr/src/tex,type=bind dxjoke/tectonic-docker /bin/sh -c "tectonic SiddharthCV.tex"
