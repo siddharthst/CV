@@ -1,11 +1,19 @@
 sudo: require
 dist: beaver
-language: bash
+language: generic
+
+cache:
+directories:
+  - "/tmp/texlive"
+  - "$HOME/.texlive"
+  
+timeout: 3600
 
 before_install:
-  - sudo apt-get -qq update
-  - sudo apt-get install -y texlive-base texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra
+  - travis_wait 45 bash ./utilities/travis_setup.sh
+  - export PATH="/tmp/texlive/bin/x86_64-linux:$PATH"
 
 script:
-- mkdir _build
-- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build src/SiddharthCV.tex
+  - mkdir _build
+  - latexmk -pdf -interaction=nonstopmode -halt-on-error src/SiddharthCV.tex
+  - latexmk -c
