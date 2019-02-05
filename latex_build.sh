@@ -5,7 +5,7 @@
 
  sudo apt-get -qq update
  export PATH=/tmp/texlive/bin/x86_64-linux:$PATH
-
+ export PATH=/usr/local/texlive/2018/bin/x86_64-linux:$PATH
  if ! command -v pdflatex > /dev/null; then
      echo "Texlive not installed"
      echo "Downloading texlive and installing"
