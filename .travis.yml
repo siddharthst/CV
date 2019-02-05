@@ -1,11 +1,16 @@
 sudo: required
-language: generic
-services: docker
+language: latex
 
+before_install:
+- sudo apt-get update -qq
+- sudo apt-get install texlive-latex-base
 script:
-  # We use the docker image from https://hub.docker.com/r/dxjoke/tectonic-docker/
-  - docker pull dxjoke/tectonic-docker
-  # Compiling only main.tex:
-  - docker run --mount src=$TRAVIS_BUILD_DIR/src,target=/usr/src/tex,type=bind dxjoke/tectonic-docker /bin/sh -c "tectonic SiddharthCV.tex"
-  # Compiling multiple files as well as using biber:
-#  - docker run --mount src=$TRAVIS_BUILD_DIR/src,target=/usr/src/tex,type=bind dxjoke/tectonic-docker /bin/sh -c "tectonic --keep-intermediates --reruns 0 biber-mwe.tex; biber biber-mwe; tectonic biber-mwe.tex; tectonic main.tex"
+- mkdir build
+- pdflatex -output-directory build src/SiddharthCV.tex
+deploy:
+  provider: releases
+  file:
+    - build/root.pdf
+  skip_cleanup: true
+  on:
+    tags: true
