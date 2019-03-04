@@ -31,9 +31,12 @@
 
 \newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0 \parbox{\datebox}{\small \textit{#1}}\hspace{1.5em} #2 #3 % Define a command for each new block - change spacing and font sizes here: #1 is the left margin, #2 is the italic date field and #3 is the position/employer/location field
 \vspace{0.5em}} % Add some white space after each new entry
-\RequirePackage{expl3}
+
 \newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}} % Define a command for descriptions of each entry - change spacing and font sizes here
 
+%\usepackage{utopia}
+%\usepackage{ebgaramond} 
+\usepackage[adobesc]{newtxtext}
 \usepackage{helvet}
 \newcommand\updateinfo{\hfill\scriptsize\color{gray} Last updated on \today}
 %----------------------------------------------------------------------------------------
@@ -152,26 +155,26 @@ Country: \textit{India}\newline
 
 \NewEntry{\mbox{Jun'18--present}}{\textsc{Karolinska Institutet} - Sweden}
 
-\Description{\MarginText{SciLifeLab - Stockholm}I'm currently working as a research assistant in Dr Claudia Kutter's group in Science For Life laboratory, Stockholm. My current work builds upon my experience in my master's thesis and is more focused on the developmental dynamics of PIWI-interacting RNA (piRNA) in mice and their interplay with transposons. This project also involves an in-depth characterization of piRNA genes with respect to their function in regulating genomic integrity and as an individual class of genes. 
+\Description{\MarginText{SciLifeLab - Stockholm}I am currently working as a research assistant in Dr Claudia Kutter's group in Science For Life laboratory, Stockholm. My current work builds upon my experience in my master's thesis and is more focused on the developmental dynamics of PIWI-interacting RNA (piRNA) in mice and their interplay with transposons. This project also involves an in-depth characterisation of piRNA genes concerning their function in regulating genomic integrity and as an individual class of genes. 
 	\\ Reference: Claudia \textsc{Kutter}\ \ $\cdotp$\ \ +46-704933896\ \ $\cdotp$\ \ \href{mailto:claudia.kutter@ki.se}{claudia.kutter@ki.se}}
 
 \NewEntry{Jun--Aug '17}{\textsc{Karolinska Institutet} - Sweden}
 
-\Description{\MarginText{SciLifeLab - Stockholm}After being awarded SciLifeLab Summer Fellowship, I joined Dr. Claudia Kutters group at the Karolinska Institute/SciLifeLab. My work was focused on annotating various RNA classes from mice liver at various developmental stages by using of total RNA sequencing data. This project involved methods for discovering novel developmental stage-specific noncoding RNAs and correlation with other meta resources to mark functionality. 
+\Description{\MarginText{SciLifeLab - Stockholm}After being awarded the SciLifeLab Summer Fellowship, I joined Dr Claudia Kutters group at the Karolinska Institute/SciLifeLab. My work focused on annotating various RNA classes from mice liver at different developmental stages by using total RNA sequencing data. This project involved methods for discovering novel developmental stage-specific noncoding RNAs and correlation with other meta-resources to mark functionality. 
 	\\ Reference: Claudia \textsc{Kutter}}
 
 %------------------------------------------------
 
 \NewEntry{Jun--Aug '15}{\textsc{Institute of Oncology Research}  - Switzerland}
 
-\Description{\MarginText{IOSI-IOR}Worked under Dr. Francesco Bertoni’s  group at Institute of Oncology Research, Bellinzona, Switzerland on performance profiling of short read aligners (using Nvidia CUDA framework) for testing scalability in GPGPU environment. I studied impact of GPU based tools on NGS analysis pipeline and included cost versus performance analysis.  \\ Reference: Ivo \textsc{Kwee}\ \ +41-794283375\ \ $\cdotp$\ \ \href{mailto: ivo.kwee@ior.iosi.ch}{ ivo.kwee@ior.iosi.ch}}
+\Description{\MarginText{IOSI-IOR}I worked under Dr Francesco Bertoni’s group at Institute of Oncology Research, Bellinzona, Switzerland on performance profiling of short read aligners (using Nvidia CUDA framework) for testing scalability in GPGPU environment. I studied the impact of GPU based tools on the next generation sequencing analysis pipeline and included cost versus performance analysis based on scaling.  \\ Reference: Ivo \textsc{Kwee}\ \ +41-794283375\ \ $\cdotp$\ \ \href{mailto: ivo.kwee@ior.iosi.ch}{ ivo.kwee@ior.iosi.ch}}
 
 \Description{\MarginText{Master's thesis}\textit{Micro-evolution of regulatory RNAs}\newline
-	In this master thesis project, I am currently investigating the functional contribution of regulatory RNA in speciation in closely related mice species. This involves studying dynamics of their species-specific gene expression by utilizing ChIP sequencing to define active promoters along with short and total RNA sequencing. \newline
+	In this master thesis project, I investigated the functional contribution of regulatory RNA in speciation in closely related mice species. This involved studying the dynamics of their species-specific gene expression by utilising ChIP sequencing to define active promoters along with short and total RNA sequencing.  \newline
 	Supervisor: Claudia \textsc{Kutter}}
 
 \Description{\MarginText{Bachelor's thesis}\textit{Improving the computation of positive selection using codon models}\newline
-	In my bachelor project, I successfully modified software algorithms to reduce the redundancy and increase the sensitivity by employing Branch-Site Model on GPU architecture. By running simulations, I tested the gains in efficiency and performance to validate that my algorithm modifications were appropriate.}
+	  In my bachelor's project, I was working on improving the computation of positive selection using codon models. In this project, I implemented the Branch-Site Model on GPU architecture, and test the efficiency gains which are potentially possible. I changed the underlying algorithm to reduce the redundancy and increase the sensitivity by optimising the subtree pruning. I mainly used (CUDA)C++ for this project. The primary challenge of this project was to implement the current model as it is, without any heuristics involved, and still archive exceptionally low runtimes.}
 
 
 \vspace{1em} % Extra space between major sections
@@ -216,6 +219,15 @@ Reference: Lars \textsc{Arvestad}\ \ $\cdotp$\ \ +4687906436\ \ $\cdotp$\ \ \hre
 \NewEntry{2018}{2\textsuperscript{nd} Uppsala Transposon Symposium}
 
 \Description{\MarginText{Poster}Micro-evolution of regulatory RNA in M. domesticus and M. castaneus} 
+
+%------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	Posters and conferences
+%----------------------------------------------------------------------------------------
+\spacedlowsmallcaps{Grants}\vspace{1em}
+
+\Description{\MarginText{Nvidia} \textit{2015} - Nvidia GPU Grant Program} 
 
 %------------------------------------------------
 
