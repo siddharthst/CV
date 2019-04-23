@@ -61,6 +61,10 @@
 
 \NewEntry{phone}{(Swe) +46-702759580\ \ $\cdotp$\ \ (Ind) +91-8894636427} % Phone number(s)
 
+\NewEntry{website}{\href{www.scilen.se}{www.scilen.se}}
+
+\NewEntry{github}{\href{https://github.com/siddharthst/}{siddharthst}}
+
 \vspace{1em} % Extra white space between the personal information section and goal
 
 %\noindent\spacedlowsmallcaps{Goal}\vspace{1em} % Goal heading, could be used for a quotation or short profile instead
@@ -101,11 +105,11 @@ Country: \textit{India}\newline
 %	COMPUTER SKILLS
 %----------------------------------------------------------------------------------------
 
-\spacedlowsmallcaps{Bioinformatics skills}\vspace{1em}
+\spacedlowsmallcaps{Programming skills}\vspace{1em}
 
-\Description{\MarginText{Workflows}Genome/Transcriptome assembly, Quantification, Differential expression, Novel gene discovery, Time series analysis, Weighted correlation network analysis}
-\vspace{-2.5mm}
 \Description{\MarginText{Programming}\textsc{C++/C (including CUDA and MPI), Java, Python, Perl, R}}
+\vspace{-2.5mm}
+\Description{\MarginText{Libraries}\textsc{Pandas, Dask, Matplotlib, Altair}}
 \vspace{-2.5mm}
 \Description{\MarginText{Databases}\textsc{MySQL}}
 \vspace{-2.5mm}
@@ -113,21 +117,12 @@ Country: \textit{India}\newline
 \vspace{-2.5mm}
 \Description{\MarginText{Documentation}\textsc{\LaTeX, Markdown}}
 \vspace{-2.5mm}
-\Description{\MarginText{Version control}\textsc{GIT}}
+\Description{\MarginText{Version control}\textsc{GIT (Including  Automated testing and CI)}}
 \vspace{-2.5mm}
-\Description{\MarginText{Model organisms}\textsc{Human, Mice, \textit{P. abies}}}
+\Description{\MarginText{Workflows}Time series analysis, Weighted correlation network analysis}
+\vspace{-2.5mm}
 
 %------------------------------------------------
-
-%----------------------------------------------------------------------------------------
-%	LAB SKILLS
-%----------------------------------------------------------------------------------------
-
-\spacedlowsmallcaps{Lab skills}\vspace{1em}
-
-\Description{\MarginText{Genetic Engineering}Gene cloning using bacteria, Gene disruption and gene replacement in bacteria}
-
-\Description{\MarginText{General}DNA isolation, RNA isolation, Plasmid and genomic DNA isolation, PCR, Sanger and Illumina sequencing}
 
 %----------------------------------------------------------------------------------------
 %	Keywords, coursework 
@@ -135,7 +130,9 @@ Country: \textit{India}\newline
 
 \spacedlowsmallcaps{Coursework - keywords}\vspace{1em}
 
-\Description{\MarginText{Molecular biology}Systems biology, Genetics, translational research in cardiology, neurodegenerative disorders, homology search, multiple sequence alignment, phylogeny reconstruction, protein topology prediction, biophysical chemistry, molecular dynamics, comparative genomics, proteomics, mass spectrometry, antibody assays, short and long read sequencing, mircoarrays, bead based assays, droplet barcoding, single cell sequencing, ChIP sequencing}
+\Description{\MarginText{Computer science}Algorithm design and analysis, High performance computing, Cryptography, Object Oriented Programming, Relational Database Management Systems, Machine Learning - Support Vector Machines and Artificial Neural Networks}
+
+\Description{\MarginText{Molecular biology}Systems biology, homology search, multiple sequence alignment, phylogeny reconstruction, protein topology prediction, molecular dynamics, comparative genomics, proteomics, mass spectrometry, short and long read sequencing}
 
 
 %------------------------------------------------
@@ -155,23 +152,21 @@ Country: \textit{India}\newline
 
 \NewEntry{\mbox{Jun'18--present}}{\textsc{Karolinska Institutet} - Sweden}
 
-\Description{\MarginText{SciLifeLab - Stockholm}I am currently working as a research assistant in Dr Claudia Kutter's group in Science For Life laboratory, Stockholm. My current work builds upon my experience in my master's thesis and is more focused on the developmental dynamics of PIWI-interacting RNA (piRNA) in mice and their interplay with transposons. This project also involves an in-depth characterisation of piRNA genes concerning their function in regulating genomic integrity and as an individual class of genes. 
-	\\ Reference: Claudia \textsc{Kutter}\ \ $\cdotp$\ \ +46-704933896\ \ $\cdotp$\ \ \href{mailto:claudia.kutter@ki.se}{claudia.kutter@ki.se}}
+\Description{\MarginText{SciLifeLab - Stockholm}I am currently working as a research assistant in the Department of Microbiology, Tumor and Cell Biology, Karolinska Institutet, Stockholm. My current work involves large scale analysis of RNA sequencing data. This includes efficient processing of data in a clustered environment and downstream analysis using R and Python. I mainly use Pandas for storing and operating on sequence alignment data, coupled with matplotlib and Altair for static and interactive visualisations. I have also repurposed algorithms and methods used in signal processing for the genomic annotation and discovery of novel elements in mice genome. }
 
 \NewEntry{Jun--Aug '17}{\textsc{Karolinska Institutet} - Sweden}
 
-\Description{\MarginText{SciLifeLab - Stockholm}After being awarded the SciLifeLab Summer Fellowship, I joined Dr Claudia Kutters group at the Karolinska Institute/SciLifeLab. My work focused on annotating various RNA classes from mice liver at different developmental stages by using total RNA sequencing data. This project involved methods for discovering novel developmental stage-specific noncoding RNAs and correlation with other meta-resources to mark functionality. 
-	\\ Reference: Claudia \textsc{Kutter}}
+\Description{\MarginText{SciLifeLab - Stockholm}My work at SciLifeLab focused on annotating various RNA classes from mice liver at different developmental stages by using total RNA sequencing data. This project involved methods for discovering novel developmental stage-specific noncoding RNAs and correlation with other meta-resources to mark functionality. I mainly used Pandas along with Python REST interface to automatically acquire and create relational data links for my genes, thereby annotating them using multiple meta-resources in using a robust and reproducible framework. During this time I also explored the use of Python interactive visualisation library Bokeh for exploratory analysis. 
+	\\ Reference: Hassan  \textsc{Foroughi}\ \ $\cdotp$\ \ \href{mailto: hassan.foroughi.asl@ki.se}{ hassan.foroughi.asl@ki.se}}
 
 %------------------------------------------------
 
 \NewEntry{Jun--Aug '15}{\textsc{Institute of Oncology Research}  - Switzerland}
 
-\Description{\MarginText{IOSI-IOR}I worked under Dr Francesco Bertoni’s group at Institute of Oncology Research, Bellinzona, Switzerland on performance profiling of short read aligners (using Nvidia CUDA framework) for testing scalability in GPGPU environment. I studied the impact of GPU based tools on the next generation sequencing analysis pipeline and included cost versus performance analysis based on scaling.  \\ Reference: Ivo \textsc{Kwee}\ \ +41-794283375\ \ $\cdotp$\ \ \href{mailto: ivo.kwee@ior.iosi.ch}{ ivo.kwee@ior.iosi.ch}}
-
+\Description{\MarginText{IOSI-IOR}I worked under Dr Francesco Bertoni’s group at Institute of Oncology Research, Bellinzona, Switzerland on performance profiling of short read aligners (using Nvidia CUDA framework) for testing scalability in GPGPU environment. I studied the impact of GPU based tools on the next generation sequencing analysis pipeline and included cost versus performance analysis based on scaling.  }
+	
 \Description{\MarginText{Master's thesis}\textit{Micro-evolution of regulatory RNAs}\newline
-	In this master thesis project, I investigated the functional contribution of regulatory RNA in speciation in closely related mice species. This involved studying the dynamics of their species-specific gene expression by utilising ChIP sequencing to define active promoters along with short and total RNA sequencing.  \newline
-	Supervisor: Claudia \textsc{Kutter}}
+	In this master thesis project, I investigated the functional contribution of regulatory RNA in speciation in closely related mice species.}
 
 \Description{\MarginText{Bachelor's thesis}\textit{Improving the computation of positive selection using codon models}\newline
 	  In my bachelor's project, I was working on improving the computation of positive selection using codon models. In this project, I implemented the Branch-Site Model on GPU architecture, and test the efficiency gains which are potentially possible. I changed the underlying algorithm to reduce the redundancy and increase the sensitivity by optimising the subtree pruning. I mainly used (CUDA)C++ for this project. The primary challenge of this project was to implement the current model as it is, without any heuristics involved, and still archive exceptionally low runtimes.}
