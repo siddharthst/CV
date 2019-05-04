@@ -6,4 +6,4 @@ services: docker
 before_install:
 - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-full
 script:
-- pdflatex -interaction=nonstopmode -halt-on-error src/SiddharthCV.tex
+- pdflatex -interaction=nonstopmode -halt-on-error src/CV.tex
