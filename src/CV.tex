@@ -11,10 +11,10 @@
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
-
+\PassOptionsToPackage{a4paper, margin=0.5in}{geometry}
 \documentclass{scrartcl}
-
 \reversemarginpar % Move the margin to the left of the page 
+
 
 \newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}} % New command defining the margin text style
 \usepackage[T1]{fontenc}
@@ -53,13 +53,15 @@
 
 \noindent\spacedlowsmallcaps{Personal Information}\vspace{0.5em} % Personal information heading
 
-\NewEntry{}{\textit{Born in India,}}{08 May 1994} % Birthplace and date
+%\NewEntry{}{\textit{Born in India,}}{08 May 1994} % Birthplace and date
 
-\NewEntry{email}{\href{mailto:siddharth.tomar@scilifelab.se}{siddharth.tomar@scilifelab.se}} % Email address
+\NewEntry{email}{\href{mailto:siddhartht.94@gmail.com}{siddhartht.94@gmail.com}} % Email address
 
 \NewEntry{website}{\href{https://www.scilen.se}{https://www.scilen.se}} % Personal website
 
 \NewEntry{github}{\href{https://github.com/siddharthst}{siddharthst}} % Personal website
+
+\NewEntry{StackExchange}{\href{https://stackexchange.com/users/4437426/siddharth}{Siddharth}} % Personal website
 
 \NewEntry{phone}{(Swe) +46-702759580\ \ $\cdotp$\ \ (Ind) +91-8894636427} % Phone number(s)
 
@@ -103,10 +105,8 @@ Additional electives:  \textit{Cryptography}\ \ $\cdotp$\ \  \textit{High Perfor
 %	COMPUTER SKILLS
 %----------------------------------------------------------------------------------------
 
-\spacedlowsmallcaps{Bioinformatics skills}\vspace{1em}
+\spacedlowsmallcaps{Skills}\vspace{1em}
 
-\Description{\MarginText{Workflows}Genome/Transcriptome assembly, Quantification, Differential expression, Novel gene discovery}
-\vspace{-2.5mm}
 \Description{\MarginText{Programming}\textsc{C++/C (including CUDA and MPI), Java, Python, Perl, R}}
 \vspace{-2.5mm}
 \Description{\MarginText{Libraries}\textsc{Pandas, Dask, Matplotlib, Altair}}
@@ -120,25 +120,21 @@ Additional electives:  \textit{Cryptography}\ \ $\cdotp$\ \  \textit{High Perfor
 \Description{\MarginText{Version control}\textsc{GIT (Including automated testing and CI), Snakemake}}
 \vspace{-2.5mm}
 \Description{\MarginText{Workflows}Time series analysis, Weighted correlation network analysis}
-\vspace{-2.5mm}
+
+
+\spacedlowsmallcaps{Other}\vspace{1em}
+
 \Description{\MarginText{Model organisms}\textsc{Human, Mice, \textit{P. abies}}}
+\vspace{-2.5mm}
+\Description{\MarginText{Workflows}Genome/Transcriptome assembly, Quantification, Differential expression, Novel gene discovery}
+\vspace{-2.5mm}
+\Description{\MarginText{Life Science}DNA isolation, RNA isolation, Plasmid and genomic DNA isolation, PCR, Sanger and Illumina sequencing}
+
 
 %------------------------------------------------
-
-%----------------------------------------------------------------------------------------
-%	LAB SKILLS
-%----------------------------------------------------------------------------------------
-
-\spacedlowsmallcaps{Lab skills}\vspace{1em}
-
-\Description{\MarginText{Genetic Engineering}Gene cloning using bacteria, Gene disruption and gene replacement in bacteria}
-
-\Description{\MarginText{General}DNA isolation, RNA isolation, Plasmid and genomic DNA isolation, PCR, Sanger and Illumina sequencing}
-
 %----------------------------------------------------------------------------------------
 %	Keywords, coursework 
 %----------------------------------------------------------------------------------------
-
 \spacedlowsmallcaps{Coursework - keywords}\vspace{1em}
 
 \Description{\MarginText{Computer science}Algorithm design and analysis, High performance computing, Cryptography, Object Oriented Programming, Relational Database Management Systems, Machine Learning - Support Vector Machines and Artificial Neural Networks}
@@ -151,7 +147,7 @@ Additional electives:  \textit{Cryptography}\ \ $\cdotp$\ \  \textit{High Perfor
 %------------------------------------------------
 
 \vspace{1em} % Extra space between major sections
-
+\newpage
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
@@ -190,8 +186,6 @@ Additional electives:  \textit{Cryptography}\ \ $\cdotp$\ \  \textit{High Perfor
 %	PROJECTS
 %----------------------------------------------------------------------------------------
 
-
-\newpage
 \noindent\spacedlowsmallcaps{Projects}\vspace{1em}
 
 \NewEntry{2017}{\textsc{KTH Royal Institute of Technology}}
